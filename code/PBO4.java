@@ -47,6 +47,9 @@ public class PBO4 {
             System.out.println("\n=== Negara ===");
             System.out.println(negaraPelanggan);
 
+            System.out.println("\n=== Total Produk Terjual ===");
+            totalProdukTerjual.entrySet().stream().limit(5).forEach(e -> System.out.println("StockCode: " + e.getKey() + " -> " + e.getValue() + " pcs"));
+
             System.out.println("\n=== Total Pendapatan Negara ===");
             totalPendapatanNegara.forEach((negara, money) -> System.out.println("Negara:" + negara + " -> $" + money));
             
